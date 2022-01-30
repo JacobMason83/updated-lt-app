@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Footer from './components/footer/footer';
 import Dashboard from './components/hero/dashboard';
+import ShowMessagesTable from './components/hero/showMessages';
 import NavBar from './components/nav/nav';
 import Login from './helpers/Login';
 
@@ -25,6 +26,7 @@ const username = ''
             )}
           />
        <Route path='/dashboard' element={<Dashboard />} />
+       <Route path='/showMessages' element={<ShowMessagesTable />} />
     </Routes>
   <Footer />
 </Router>

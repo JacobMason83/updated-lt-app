@@ -16,9 +16,13 @@ function NavBar() {
     const title = {
         marginLeft: 'auto',
         marginRight: 'auto',
+        color: 'orange',
     }
     const li = {
-        listStyleType: 'none'
+        listStyleType: 'none',
+        color: 'orange',
+        textDecoration: 'none',
+        fontSize: '36px'
     }
     return (
       <>
@@ -28,17 +32,17 @@ function NavBar() {
           Launch
         </Button>
         <h1 style={title}>Lanlord Tenant App </h1>
-        <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas style={{backgroundColor:'black'}} show={show} onHide={handleClose} >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Landlord Tenant App</Offcanvas.Title>
+            <Offcanvas.Title style={{color:'orange'}}>Landlord Tenant App</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
        <ul>
-           <a href='./dashboard'><li style={li}>Home</li></a>
-           <a href='./properties'><li style={li}>Properties</li></a>
-           <a href='./messages'><li style={li}>Messages</li></a>
-           <a href='./about'><li style={li}>About</li></a>
-           <a href='./pay'><li style={li}>Pay</li></a>
+           <a href='./dashboard' style={{textDecoration: 'none'}}><li style={li}>Home</li></a>
+           <a href='./properties' style={{textDecoration: 'none'}}><li style={li}>Properties</li></a>
+           <a href='./showMessages' style={{textDecoration: 'none'}}><li style={li}>Messages</li></a>
+           <a href='./about' style={{textDecoration: 'none'}}><li style={li}>About</li></a>
+           <a href='./pay' style={{textDecoration: 'none'}}><li style={li}>Pay</li></a>
           
        </ul>
           </Offcanvas.Body>
