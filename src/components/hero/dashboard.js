@@ -6,7 +6,7 @@ import requestImage from '../../style/images/maitanenceImg.jpg'
 import mickey from '../../style/images/mickey.jpg'
 import caroImage from '../../style/images/caroImg.jpg'
 import space from '../../style/images/space.jpg'
-
+// TODO:  need to use the store to bring in the username, and userdata into the application 
 const Dashboard = () => {
   // the carosue will be used to display all of the properties in the landlords object
   return (

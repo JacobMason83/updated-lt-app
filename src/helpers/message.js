@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 function Messages({data}) {
     const [tableData, setTableData] = useState([])
-
+// need to pull in the data from the reducer to fill up the messages table 
     
   return (
     <>
