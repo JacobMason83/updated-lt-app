@@ -3,7 +3,8 @@ import { Container, Table } from 'react-bootstrap';
 import Messages from '../../helpers/message';
 
 const ShowMessagesTable = () => {
-    const [messageData, setMessageData] = useState("")
+    const [messageData, setMessageData] = useState("") // this needs to come from the store that i created and have all the data come in from there
+    // TODO need to add a use effect hook to call the store and check for updates to the messages part of the cart. 
 
     
   return (

@@ -7,6 +7,9 @@ import mickey from '../../style/images/mickey.jpg'
 import caroImage from '../../style/images/caroImg.jpg'
 import space from '../../style/images/space.jpg'
 // TODO:  need to use the store to bring in the username, and userdata into the application 
+// TODO need to bring in some sort of js module to make a graph, or something for the dashboard to be able to track the renters payments and requests etc. 
+// TODO need to have a table of renters , date of ending of the lease, and monthly payments that can be converted into a CV 
+// TODO need to have a message button that displays on all screens. 
 const Dashboard = () => {
   // the carosue will be used to display all of the properties in the landlords object
   return (

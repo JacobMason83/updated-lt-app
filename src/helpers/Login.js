@@ -16,7 +16,7 @@ function Login({user}) {
 
   return (
 
-    <Container  style={{padding: '250px', width:'50vw', backgroundColor:'orange'}}>
+    <Container  style={{padding: '150px', marginTop:'10%', width:'50vw', backgroundColor:'rgba(255, 140, 0, 0.5)'}}>
     <Col xs='1' md='3' lg='4'></Col>
     <Col>
       <Row md={7}  className=' justify-content-center'>
