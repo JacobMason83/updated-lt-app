@@ -1,25 +1,21 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import {Form, Button, FloatingLabel} from 'react-bootstrap'
 
 function LoginForms({userForm}) {
   const [user, setUser] = useState(userForm);
-  useEffect(() => {
-    
-  setUser(user)  
 
-  }, [user]);
-  
+
   return (
     <Form>
     {/* floating sign in for returning users  */}
     <Form.Group className="mb-3"  >
     <FloatingLabel
     controlId="floatingInput"
-    label="Email Address"
+    label="username"
     className="mb-3"
     style={{color: 'black'}}
   >
-    <Form.Control type="email" placeholder="name@example.com" />
+    <Form.Control style={{width: '100%'}} type="email" placeholder="name@example.com" />
   </FloatingLabel>
     </Form.Group>
     <Form.Group className="mb-3"  >
@@ -29,7 +25,7 @@ function LoginForms({userForm}) {
     className="mb-3"
     style={{color: 'black'}}
   >
-    <Form.Control type="password" placeholder="password" />
+    <Form.Control style={{width: '100%'}} type="password" placeholder="password" />
   </FloatingLabel>
     </Form.Group>
   
